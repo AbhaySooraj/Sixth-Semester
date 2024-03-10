@@ -2,43 +2,33 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel=”stylesheet” href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">;
-        <title>Confirmation</title>
+        <title>Confirmation Page</title>
         <link rel="stylesheet" href="styling.css">
         <style>
-           body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-image: url(https://th.bing.com/th/id/R.2818a56c64d1d7c84f3d3288e09cc956?rik=L7L%2bO6V%2bC3zYAg&pid=ImgRaw&r=0);
-                background-size: cover;
-            }
-            .container {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: #fff;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                text-align: center;                
-            }       
-    
-
+            div{
+              position:absolute;
+              top: 50%;
+              left:50%;
+              transform: translate(-50%, -50%);
+              height: 10vh;
+              width: 100vh;
+              background-color: white;
+              text-align: center;
+              
+        }
         </style>
     </head>
-
     <body>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ticket.html">Ticket Booking</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-        </div>
-        <div class="container">
-            <h1>Booking Confirmed</h1>
-        </div>
-  
+        <nav class="navbar">
+            <a href="index.html">Home Page</a>
+            <a href="ticket.html">Ticket Booking</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <div>
+            <p style="font-size: 25px; font-weight: bolder; ">Booking Confirmed !!!!!</p>
+          </div>
+        <footer>
+            <p>2024 Online Ticket Booking Website</p>
+        </footer>
     </body>
+</html>

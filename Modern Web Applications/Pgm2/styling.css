@@ -1,0 +1,34 @@
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/25/Vyttila_Hub_W.jpg);
+    background-size: cover;
+    
+  }
+.navbar{
+    width: 100%;
+    height:5%;
+    background-color: black;
+    text-align: center;
+    padding-top: 2vh;
+
+  }
+
+  .navbar a{
+    color: aliceblue;
+    margin-left: 5vh;
+    
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }

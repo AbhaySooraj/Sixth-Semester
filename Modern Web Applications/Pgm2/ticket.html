@@ -1,171 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Ticket Booking</title>
-    <link rel="stylesheet" href="styling.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url(https://th.bing.com/th/id/R.2818a56c64d1d7c84f3d3288e09cc956?rik=L7L%2bO6V%2bC3zYAg&pid=ImgRaw&r=0);
-            background-size: cover;
-
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .booking-form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="date"],
-        .form-group select {
-            width: 90%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-group button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .form-group button:hover {
-            background-color: #0056b3;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position:static;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ticket.html">Ticket Booking</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-        </ul>
-    </div>
-
-<div class="container">
-    <h1>Online Bus Ticket Booking</h1>
-    <div class="booking-form">
-        <form action="confirmation.html" method="post">
-            <div class="form-group">
-                <label for="FirstName">First Name :</label>
-                <input type="text" id="FirstName" name="FirstName" placeholder="Enter First Name" required>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ticket Booking</title>
+        <link rel="stylesheet" href="styling.css">
+        <style>
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: aliceblue;
+            }
+            .booking-form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+            .form-group label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+            }
+            .form-group input[type="text"],
+            .form-group input[type="email"],
+            .form-group input[type="date"],
+            .form-group textarea,
+            .form-group select {
+                width: 90%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .form-group button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .form-group button:hover {
+                background-color: #0056b3;
+            }   
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html">Home Page</a>
+            <a href="ticket.html">Ticket Booking</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <div class="container">
+            <p style="text-align: center; font-weight: 900; font-size: 30px;">Bus Ticket Booking Form</p>
+            <div class="booking-form">
+                <form action="confirmation.html" method="post">
+                    <div class="form-group">
+                        <label for="FirstName">First Name :</label>
+                        <input type="text" id="FirstName" name="FirstName" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="LastName">Last Name :</label>
+                        <input type="text" id="LastName" name="LastName" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth :</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender :</label>
+                        <label for="male"></label>
+                        <input type="radio" name="gender" value="Male" required>Male
+                        <label for="female"></label>
+                        <input type="radio" name="gender" value="Female" required>Female
+                        <label for="Other"></label>
+                        <input type="radio" name="gender" value="Other" required>Other
+                    </div>
+                    <div class="form-group">
+                        <label for="from">Departure :</label>
+                        <select id="from" name="from" required>
+                            <option value="Ernakulam">Ernakulam</option>
+                            <option value="Thrissur">Thrissur</option>
+                            <option value="Alappuzha">Alappuzha</option>
+                            <option value="Kottayam">Kottayam</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">Arrival :</label>
+                        <select id="to" name="to" required>
+                            <option value="Ernakulam">Ernakulam</option>
+                            <option value="Thrissur">Thrissur</option>
+                            <option value="Alappuzha">Alappuzha</option>
+                            <option value="Kottayam">Kottayam</option>
+                        </select>
+                    </div>          
+                    
+        
+                    <div class="form-group">
+                        <label for="date">Date of Journey:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="passengers">Passengers :</label>
+                        <select id="passengers" name="passengers" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="mno">Mobile No. :</label>
+                        <input type="tel" id="mno" name="mno" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="addr">Address :</label>
+                        <textarea id="addr" name="addr" placeholder="Enter Address" style="height: 100px; resize: none;" required></textarea>
+                    </div>
+                    
+        
+                    <div class="form-group">
+                        <button type="submit">Submit Details</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="LastName">Last Name :</label>
-                <input type="text" id="LastName" name="LastName" placeholder="Enter Last Name" required>
-            </div>
-            <div class="form-group">
-                <label for="dob">Date of Birth :</label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
-            <div class="form-group">
-                <label for="gender">Gender :</label>
-                <label for="male"></label>
-                <input type="radio" name="gender" value="Male" required>Male
-                <label for="female"></label>
-                <input type="radio" name="gender" value="Female" required>Female
-                <label for="Other"></label>
-                <input type="radio" name="gender" value="Other" required>Other
-            </div>
-            <div class="form-group">
-                <label for="from">Departure :</label>
-                <select id="from" name="from" required>
-                    <option value="Ernakulam">Ernakulam</option>
-                    <option value="Thrissur">Thrissur</option>
-                    <option value="Alappuzha">Alappuzha</option>
-                    <option value="Kottayam">Kottayam</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="to">Arrival :</label>
-                <select id="to" name="to" required>
-                    <option value="Ernakulam">Ernakulam</option>
-                    <option value="Thrissur">Thrissur</option>
-                    <option value="Alappuzha">Alappuzha</option>
-                    <option value="Kottayam">Kottayam</option>
-                </select>
-            </div>          
-            
-
-            <div class="form-group">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-
-            <div class="form-group">
-                <label for="passengers">Passengers :</label>
-                <select id="passengers" name="passengers" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="mno">Mobile No. :</label>
-                <input type="tel" id="mno" name="mno" required>
-            </div>
-
-            <div class="form-group">
-                <label for="addr">Address :</label>
-                <input type="text" id="addr" name="addr" placeholder="Enter Address" style="height: 100px;" required>
-            </div>
-
-            <div class="form-group">
-                <button type="submit">Submit Details</button>
-                <button type="reset">Reset</button>
-            </div>
-        </form>
-    </div>
-
-</div>
-
-
-<div class="footer">
-    <p>2024 Online Ticket Booking Website</p>
-</div>
-
-</body>
+        </div>
+        <footer style="position: relative;">
+            <p>2024 Online Ticket Booking Website</p>
+        </footer>
+    </body>
 </html>
